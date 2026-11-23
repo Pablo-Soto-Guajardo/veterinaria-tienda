@@ -4,8 +4,7 @@ import cl.duoc.tienda.model.Boleta;
 import java.time.LocalDateTime;
 import java.util.List;
 
-// Forma de la boleta que consume React (misma estructura que las órdenes
-// de la Evaluación 2: cliente, envio, items y pago).
+
 public record BoletaResponse(
   Long numero,
   LocalDateTime fecha,

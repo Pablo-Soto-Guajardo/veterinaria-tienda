@@ -4,9 +4,7 @@ import jakarta.validation.Valid;
 import jakarta.validation.constraints.*;
 import java.util.List;
 
-// Lo que envía el checkout de React. No incluye precios ni total: el backend
-// los calcula desde la base para que nadie pueda pagar menos manipulando el JSON.
-// El correo del cliente tampoco viaja aquí: se toma del JWT.
+
 public record BoletaRequest(
   @NotNull @Valid Cliente cliente,
   @NotNull @Valid Envio envio,

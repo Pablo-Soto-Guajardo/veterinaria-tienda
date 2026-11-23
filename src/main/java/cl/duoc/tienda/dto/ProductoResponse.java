@@ -2,7 +2,7 @@ package cl.duoc.tienda.dto;
 
 import cl.duoc.tienda.model.Producto;
 
-// "categoria" lleva el id de la categoría, igual que el frontend de la Evaluación 2.
+
 public record ProductoResponse(
   String codigo,
   String nombre,
