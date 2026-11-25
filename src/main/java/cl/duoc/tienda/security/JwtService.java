@@ -7,6 +7,7 @@ import javax.crypto.SecretKey;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
+@Service
 public class JwtService {
   @Value("${app.jwt.secret}") private String secret;
   @Value("${app.jwt.issuer}") private String issuer;
